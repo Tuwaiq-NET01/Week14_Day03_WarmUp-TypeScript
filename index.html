@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Count</title>
+    <script src="script.js"></script>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    "
+  >
+    <label>value: <input id="name" /></label>
+
+    <button id="search" onclick="count()">Count</button>
+    <p id="result"></p>
+  </body>
+  <script>
+    function count() {
+      document.getElementById('result').innerHTML = getCount(
+        document.getElementById('name').value
+      )
+    }
+  </script>
+</html>
