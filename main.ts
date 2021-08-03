@@ -36,6 +36,6 @@ let submitButton = document.getElementById("submit");
 let outputElement = document.getElementById("scoreout");
 
 submitButton.addEventListener("click", () => {
-    let value = inputElement.value;
+    let value = (<HTMLInputElement>inputElement).value;
     outputElement.innerText = calculate(value).toString();
 });
