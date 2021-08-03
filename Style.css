@@ -1,0 +1,17 @@
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+body{
+    background-color: bisque;
+
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;   
+
+}
