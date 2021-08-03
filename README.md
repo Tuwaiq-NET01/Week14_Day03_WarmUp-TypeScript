@@ -31,6 +31,7 @@ And to total:
 
 ## Output:
 <img src=output.png>
+
 ## Double Check
 http://www.dvorkin.com/scrabscor.php
 
