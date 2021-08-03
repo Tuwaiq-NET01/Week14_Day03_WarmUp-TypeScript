@@ -19,7 +19,7 @@ function n(name : any): number {
         if (list6.includes(name[letter])) weight += 8
         if (list7.includes(name[letter])) weight += 10
     }
-    return weight
+    return weight;
 }
 
 console.log(n("Abdulmajeed"))
