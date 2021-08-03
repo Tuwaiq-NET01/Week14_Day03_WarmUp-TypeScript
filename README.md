@@ -28,5 +28,7 @@ And to total:
 - = `5 + 9`
 - = 14
 
+<img src="https://b.top4top.io/p_20418poyl1.png"/>
+
 ## Double Check
 http://www.dvorkin.com/scrabscor.php
