@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warmup</title>
+    <style>
+        .center{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+            font: 24px bold;
+        }   
+        input{
+            font: 24px bold;
+            padding: 5px;
+        }
+        button{
+            padding: 15px;
+            border-radius: 5px;
+            border:0;
+            font-weight: 600;
+        }
+        .result{
+             display: flex;
+             align-items: flex-start;
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <form>
+            <label>The word:</label>
+            <input class="word" type="text"/>
+            <button class="calculate">Calculate</button>
+        </form>
+        <div class="result">
+        <label>The score:</label>
+        <span class="score"></span>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
