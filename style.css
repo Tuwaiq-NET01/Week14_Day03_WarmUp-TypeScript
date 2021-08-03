@@ -1,0 +1,5 @@
+body{margin:0;padding:0;font-family:Avenir,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background-color:#27292d;color:#fff}
+body #app{max-width:600px;margin-left:auto;margin-right:auto;padding:20px}
+body #app h1{font-weight:700;font-size:28px;text-align:center}
+body #app button{cursor:pointer;background-color:#a0a4d9;border:1px solid #a0a4d9;color:#1f2023;font-weight:700;outline:none;border-radius:6px}
+body #app h2{font-size:22px;;padding-bottom:6px}
