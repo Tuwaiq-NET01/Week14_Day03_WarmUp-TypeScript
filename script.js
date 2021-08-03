@@ -1,21 +1,43 @@
-var letterList = {
-    A: 1, E: 1, I: 1, O: 1, U: 1,
-    L: 1, N: 1, R: 1, S: 1, T: 1,
-    D: 2, G: 2,
-    B: 3, C: 3,
-    M: 3, P: 3,
-    F: 4, H: 4,
-    V: 4, W: 4, Y: 4,
-    K: 5,
-    J: 8, X: 8,
-    Q: 10, Z: 10
+var KeysValue = {
+    "1": ["A",
+     "E", 
+     "I", 
+     "O",
+      "U", 
+      "L", 
+      "N", 
+      "R", 
+      "S", 
+      "T"],
+    "2": ["D",
+     "G"],
+    "3": ["B", 
+    "C", "M", 
+    "P"],
+    "4": ["F", 
+    "H",
+     "V", 
+     "W",
+      "Y"],
+    "5": ["K"],
+    "8": ["J", "X"],
+    "10": ["Q", "Z"]
 };
-function scrabble(e) {
-    var val = 0;
-    e = e.toUpperCase();
-    for (var i = 0; i < e.length; i++) {
-        val += letterList[e[i]];
+function getValue(word) {
+    var arrWord = word.split("");
+    var value = 0;
+    for (var index = 0; index < arrWord.length; index++) {
+        for (var ele in KeysValue) {
+            if (KeysValue[ele].includes(arrWord[index].toUpperCase()))
+             {
+                value =value+ parseInt(ele);
+            }
+        }
     }
-    return val;
+    return value;
 }
-console.log(scrabble("cabbage"));
+function Result() {
+    var input = document.getElementById("Filed");
+    document.getElementById("output").innerHTML = getValue(input.value).toString();
+}
+document.getElementById("btn").addEventListener("click", Result);
