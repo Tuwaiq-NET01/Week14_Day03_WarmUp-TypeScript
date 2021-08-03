@@ -28,5 +28,12 @@ And to total:
 - = `5 + 9`
 - = 14
 
+
+## Output:
+<img src=output.png>
+
 ## Double Check
 http://www.dvorkin.com/scrabscor.php
+
+
+
