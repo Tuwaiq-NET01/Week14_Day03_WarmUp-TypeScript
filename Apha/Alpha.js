@@ -10,14 +10,14 @@ var Alpha = {
     Q: 10, Z: 10
 };
 function score(string) {
-    if (!word) {
+    if (!string) {
         return 0;
     }
-    var res = 0;
+    var result = 0;
     for (var i = 0; i < string.length; i++) {
         res += Alpha[string[i].toUpperCase()];
     }
-    return res;
+    return result;
 }
 console.log(score("Nada"));
 
